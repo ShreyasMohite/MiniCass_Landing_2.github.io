@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 1.5rem;
+    background-color: yellow;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+}
+
+.content p {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.upwards {
+    margin-top: 2rem;
+}
+
+.upwards .circle {
+    border: 2px solid #949299;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    margin: 20px;
+    padding: 0px;
+    margin: 1rem 5rem;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.upwards .circle:hover {
+    -webkit-box-shadow: 0 0 20px gray;
+    box-shadow: 0 0 20px gray;
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    -webkit-transition: 2s ease-in-out;
+    transition: 2s ease-in-out;
+}
+
+.center-para {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+    position: relative;
+    top: -1rem;
+}
+
+.section-black {
+    background-color: black;
+}
+
+.section-black {
+    height: 450px;
+    position: relative;
+}
+
+.section-black h4 {
+    text-align: center;
+    color: yellow;
+    font-size: 1.6rem;
+    padding-top: 1.5rem;
+    font-size: 2rem;
+}
+
+.section-black p {
+    text-align: center;
+    color: white;
+}
+
+.push {
+    margin-left: 10rem;
+}
+
+.push label {
+    color: white;
+    text-align: center;
+}
+
+.sign-button {
+    position: absolute;
+    top: 70%;
+    left: 46%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: yellow;
+}
+
+.down-button {
+    position: relative;
+    top: 6rem;
+    left: -1.5rem;
+}
+
+.section-yellow {
+    background-color: yellow;
+    height: auto;
+    padding: 4rem;
+}
+
+.push-right {
+    margin-left: 5rem;
+    padding-right: 3rem;
+    margin-top: 3rem;
+}
+
+.push-right .heading {
+    font-size: 1.3rem;
+    font-weight: 1rem;
+    font-weight: bolder;
+}
+
+@media (max-width: 800px) {
+    .content p {
+        width: 320px;
+        font-size: 0.8rem;
+        margin: 2 auto;
+        text-align: center;
+    }
+    .upwards .circle {
+        margin-left: 7rem;
+    }
+    .push {
+        margin-left: 2rem;
+    }
+    .sign-button {
+        margin-top: 3rem;
+    }
+    .section-black {
+        height: 650px;
+    }
+    .down-button {
+        top: 7rem;
+    }
+    .section-yellow {
+        background-color: yellow;
+        height: auto;
+        padding: 4rem;
+    }
+    .push-right {
+        margin-left: 0.3rem;
+        padding-right: 0.2rem;
+        margin-top: 3rem;
+    }
+}
+
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "var";
+@import "mixin";
+.header {
+    padding: 1.5rem;
+    background-color: $heading-color;
+}
+
+.content {
+    text-align: center;
+    h1 {
+        font-size: 2.5rem;
+    }
+    p {
+        width: 900px;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.upwards {
+    margin-top: 2rem;
+    .circle {
+        border: 2px solid $circle-border;
+        padding: 10px;
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        margin: 20px;
+        padding: 0px;
+        margin: 1rem 5rem;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 0 20px $circle-hover-color;
+            transform: rotate(-360deg);
+            transition: 2s ease-in-out;
+        }
+    }
+}
+
+.center-para {
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
+    position: relative;
+    top: -1rem;
+}
+
+.section-black {
+    background-color: $section-black-background;
+}
+
+.section-black {
+    height: 450px;
+    position: relative;
+    h4 {
+        text-align: center;
+        color: $section-black-h4;
+        font-size: 1.6rem;
+        padding-top: 1.5rem;
+        font-size: 2rem;
+    }
+    p {
+        text-align: center;
+        color: $section-black-para;
+    }
+}
+
+.push {
+    margin-left: 10rem;
+    label {
+        color: $label-color;
+        text-align: center;
+    }
+}
+
+.sign-button {
+    position: absolute;
+    top: 70%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    background-color: $button-background;
+}
+
+.down-button {
+    position: relative;
+    top: 6rem;
+    left: -1.5rem;
+}
+
+.section-yellow {
+    background-color: $section-yellow-background;
+    height: auto;
+    padding: 4rem;
+}
+
+.push-right {
+    margin-left: 5rem;
+    padding-right: 3rem;
+    margin-top: 3rem;
+    .heading {
+        font-size: 1.3rem;
+        font-weight: 1rem;
+        font-weight: bolder;
+    }
+}
+
+@media (max-width:800px) {
+    .content {
+        p {
+            width: 320px;
+            font-size: 0.8rem;
+            margin: 2 auto;
+            text-align: center;
+        }
+    }
+    .upwards {
+        .circle {
+            margin-left: 7rem;
+        }
+    }
+    .push {
+        margin-left: 2rem;
+    }
+    .sign-button {
+        margin-top: 3rem;
+    }
+    .section-black {
+        height: 650px;
+    }
+    .down-button {
+        top: 7rem;
+    }
+    .section-yellow {
+        background-color: $section-yellow-background;
+        height: auto;
+        padding: 4rem;
+    }
+    .push-right {
+        margin-left: 0.3rem;
+        padding-right: 0.2rem;
+        margin-top: 3rem;
+    }
+}
